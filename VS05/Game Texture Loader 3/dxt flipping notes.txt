@@ -1,0 +1,46 @@
+DXT1 compression
+
+16bit colour 0, 16bit colour 1, [2bit bits per image to select colour]
+
+
+layed out thusly.
+
+[pixel00][pixel01][pixel02][pixel03]
+[pixel04][pixel05][pixel06][pixel07]
+[pixel08][pixel09][pixel10][pixel11]
+[pixel12][pixel13][pixel14][pixel15]
+
+These pixels are rearranged when flipping.
+
+struct
+{
+	unsigned short c0, c1; 	// colours   
+	unsigned int;		// pixel bits
+} dxt1_layout;
+
+DXT2 & DXT3 compression
+
+64bit of alpha data @ 4bits per pixel, [DXT1 data]
+
+Alpha and colour pixels need rearranging when flipping.
+
+struct
+{
+	boost::boost::uint64_t
+	dxt1_layout colour;	// colour data
+} dxt2_layout
+
+DXT4 & DXT5 compression
+
+8 bit alpha 0, 8 bit alpha 1, 4x4 3bit lookup, DXT1 data
+
+alpha lookup and colour lookup tables need to be rearranged.
+
+struct
+{
+	unsigned char alpha0, alpha1;
+	// need a 48bit structure here
+	unsigned char col1, col2, col3, col4, col5, col6;
+	dxt1_layout colour;
+} dxt5_layout
+

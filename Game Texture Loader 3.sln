@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game Texture Loader 3", "VS05\Game Texture Loader 3\Game Texture Loader 3.vcproj", "{78ED9D7B-6207-4534-A93D-ED17971DBFC7}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{AFAF2D48-BB14-4D52-A923-E95FEB75B97B} = {AFAF2D48-BB14-4D52-A923-E95FEB75B97B}
+		{855E6BCD-2FDC-430F-8E92-A733A7DEA7AD} = {855E6BCD-2FDC-430F-8E92-A733A7DEA7AD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTL3 Tester", "VS05\GTL3 Tester\GTL3 Tester.vcproj", "{24F4CD66-58F0-438D-A5FA-FEAA15643E68}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{78ED9D7B-6207-4534-A93D-ED17971DBFC7} = {78ED9D7B-6207-4534-A93D-ED17971DBFC7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HalfHeaderGenerator", "VS05\HalfHeaderGenerator\HalfHeaderGenerator.vcproj", "{AFAF2D48-BB14-4D52-A923-E95FEB75B97B}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eLutHeaderGenerator", "VS05\eLutHeaderGenerator\eLutHeaderGenerator.vcproj", "{855E6BCD-2FDC-430F-8E92-A733A7DEA7AD}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78ED9D7B-6207-4534-A93D-ED17971DBFC7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78ED9D7B-6207-4534-A93D-ED17971DBFC7}.Debug|Win32.Build.0 = Debug|Win32
+		{78ED9D7B-6207-4534-A93D-ED17971DBFC7}.Release|Win32.ActiveCfg = Release|Win32
+		{78ED9D7B-6207-4534-A93D-ED17971DBFC7}.Release|Win32.Build.0 = Release|Win32
+		{24F4CD66-58F0-438D-A5FA-FEAA15643E68}.Debug|Win32.ActiveCfg = Debug|Win32
+		{24F4CD66-58F0-438D-A5FA-FEAA15643E68}.Debug|Win32.Build.0 = Debug|Win32
+		{24F4CD66-58F0-438D-A5FA-FEAA15643E68}.Release|Win32.ActiveCfg = Release|Win32
+		{24F4CD66-58F0-438D-A5FA-FEAA15643E68}.Release|Win32.Build.0 = Release|Win32
+		{AFAF2D48-BB14-4D52-A923-E95FEB75B97B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFAF2D48-BB14-4D52-A923-E95FEB75B97B}.Debug|Win32.Build.0 = Debug|Win32
+		{AFAF2D48-BB14-4D52-A923-E95FEB75B97B}.Release|Win32.ActiveCfg = Release|Win32
+		{AFAF2D48-BB14-4D52-A923-E95FEB75B97B}.Release|Win32.Build.0 = Release|Win32
+		{855E6BCD-2FDC-430F-8E92-A733A7DEA7AD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{855E6BCD-2FDC-430F-8E92-A733A7DEA7AD}.Debug|Win32.Build.0 = Debug|Win32
+		{855E6BCD-2FDC-430F-8E92-A733A7DEA7AD}.Release|Win32.ActiveCfg = Release|Win32
+		{855E6BCD-2FDC-430F-8E92-A733A7DEA7AD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
